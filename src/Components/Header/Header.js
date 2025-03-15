@@ -1,12 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./Header.css";
 
-export const Header = () => {
+export const Header = ({ title = "TFBC" }) => {
   return (
-    <Fragment>
-      <div className="headerDetails">
-        <h1>TFBC</h1>
-      </div>
-    </Fragment>
+    <header className="headerDetails">
+      <h1>{title}</h1>
+    </header>
   );
 };
