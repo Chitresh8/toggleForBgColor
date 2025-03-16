@@ -12,10 +12,11 @@ export const Toggle = () => {
     backgroundColor: backgroundColor ? "black" : "white",
     color: backgroundColor ? "white" : "black",
     textAlign: "center",
-    border: backgroundColor ? "10px solid cyan" : "none",
+    // border: backgroundColor ? "10px solid goldenrod" : "none",
     borderRadius: backgroundColor ? "5px" : "none",
-    height: "111px",
+    height: backgroundColor ? "none" : "auto",
     paddingBottom: backgroundColor ? "5px" : "5px",
+    transition: "background-color 0.3s ease-in-out",
   };
 
   return (
